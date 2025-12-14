@@ -32,7 +32,7 @@ function App() {
             <Route path="/exodus" element={<Exodus />} />
             <Route path="/physical-exile" element={<PhysicalExile />} />
             <Route path="/memory-exile" element={<MemoryExile />} />
-            <Route path="/generational-exile" element={<GenerationalExile />} />
+            <Route path="/generational-exile" element={<MemoryExile />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/artwork/:id" element={<ArtworkDetail />} />
             {/* Old pages - kept for backward compatibility */}

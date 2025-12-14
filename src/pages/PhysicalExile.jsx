@@ -25,71 +25,8 @@ function PhysicalExile() {
       <div className="max-w-4xl mx-auto px-8 pt-16 pb-20">
         {/* The Exodus */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">The Exodus of 1990</h2>
-          
-          <div className="space-y-6 mb-10">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              In early 1990, following escalating violence, targeted killings, and threats, 
-              approximately 100,000 Kashmiri Pandit families were forced to flee the Kashmir Valley. 
-              This was not a voluntary migration but a forced displacement driven by fear, coercion, 
-              and the breakdown of security conditions.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              The exodus occurred primarily in January and February 1990, with families leaving 
-              their ancestral homes, properties, and communities with little more than what they 
-              could carry. Many left in the middle of the night, abandoning homes that had been in 
-              their families for generations.
-            </p>
-          </div>
-
-          <div className="bg-[#fafafa] border-l-4 border-[#0a0a0a] p-10 mb-10">
-            <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Key Characteristics</h3>
-            <ul className="space-y-6 text-[#4a4a4a]">
-              <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
-                <span>
-                  <strong className="text-[#0a0a0a]">Forced Nature:</strong> The displacement was driven by threats, violence, 
-                  and fear, not voluntary choice. Many families received direct threats or witnessed 
-                  targeted killings of community members.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
-                <span>
-                  <strong className="text-[#0a0a0a]">Rapid Timeline:</strong> The mass migration occurred over a matter of 
-                  weeks, with the majority leaving in January-February 1990.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
-                <span>
-                  <strong className="text-[#0a0a0a]">Scale:</strong> An estimated 350,000 people, representing nearly the 
-                  entire Pandit population of the Valley, were displaced.
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
-                <span>
-                  <strong className="text-[#0a0a0a]">Loss of Property:</strong> Families abandoned homes, land, businesses, 
-                  and cultural sites, most of which were later occupied, destroyed, or left to decay.
-                </span>
-              </li>
-            </ul>
-          </div>
-
           {/* Button to navigate to map */}
           <div className="mt-10 text-center">
-            <button
-              onClick={() => {
-                const mapSection = document.getElementById('migration-map-section');
-                if (mapSection) {
-                  mapSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-              }}
-              className="btn-primary inline-block"
-            >
-              Explore the Interactive Migration Map
-            </button>
           </div>
         </section>
 
@@ -185,6 +122,29 @@ function PhysicalExile() {
           </div>
         </section>
 
+        {/* Identity Transformation */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Identity Transformation</h2>
+          
+          <div className="space-y-6">
+            <p className="text-base text-[#4a4a4a] leading-relaxed">
+              The exodus fundamentally transformed the identity of Kashmiri Pandits. Initially, their identity was deeply rooted in place, 
+              particularly the Valley, where they held positions of religious significance and cultural respect within Indian society. However, 
+              the displacement redefined their identity from residents of Kashmir to Kashmiris who no longer inhabit the region. Their sense 
+              of self became inextricably linked to their status as displaced persons, existing in a perpetual state of exile and seeking refuge.
+            </p>
+            <p className="text-base text-[#4a4a4a] leading-relaxed">
+              This transformation resonates with broader narratives of displacement found in literature. In <em>Exit West</em>, Nadia and Saeed 
+              experience a similar shift when forced to flee their homeland due to political violence, their identities transforming from 
+              citizens and family members to displaced survivors navigating an uncertain future. In <em>Oroonoko</em>, the prince's experience 
+              parallels the Pandits' situation through the loss of homeland, autonomy, and agency, though Oroonoko's exile was imposed through 
+              capture rather than choice, both groups faced the stark reality of leaving their homeland or facing death. Like the Pandits, 
+              Oroonoko's identity shifted dramatically from a figure of high status and reverence to someone stripped of political power and 
+              social position, reduced to a state of subjugation.
+            </p>
+          </div>
+        </section>
+
         {/* Ongoing Displacement */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Ongoing Displacement</h2>
@@ -192,10 +152,11 @@ function PhysicalExile() {
           <div className="space-y-6">
             <p className="text-base text-[#4a4a4a] leading-relaxed">
               Over three decades after the exodus, the vast majority of displaced Kashmiri Pandits 
-              remain outside the Kashmir Valley. Only a small fraction, estimated at 3,000-4,000 
-              people, have returned, primarily to secure government housing colonies. The physical 
-              exile continues, with many second and third-generation Pandits having never set foot 
-              in their ancestral homeland.
+              remain outside the Kashmir Valley. Only approximately 3,800 have returned, while 
+              others continue to find refuge in Jammu, Delhi, and other parts of India. With over 98% 
+              still displaced, the physical exile that began in 1990 remains a defining reality for the 
+              community today. The physical displacement continues, with many second and third-generation 
+              Pandits having never set foot in their ancestral homeland.
             </p>
             <p className="text-base text-[#4a4a4a] leading-relaxed">
               With many still being displaced, this physical exile transformed into other forms of exile, such as memory exile and generational exile. View the other dimensions below of exile to learn more.
@@ -211,15 +172,9 @@ function PhysicalExile() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/memory-exile"
-              className="btn-secondary"
-            >
-              Memory Exile
-            </Link>
-            <Link
-              to="/generational-exile"
               className="btn-primary"
             >
-              Generational Exile
+              Memory & Generational Exile
             </Link>
             <Link
               to="/exodus"

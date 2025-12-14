@@ -3,7 +3,7 @@ export const testimonies = [
     id: 1,
     group: "Kashmiri Pandit",
     generation: "First-generation",
-    quote: "TODO: short paraphrased quote about exile. 'We left everything behind—our homes, our temples, our way of life. Kashmir was not just a place; it was our identity.'",
+    quote: "TODO: short paraphrased quote about exile. 'We left everything behind, our homes, our temples, our way of life. Kashmir was not just a place; it was our identity.'",
     source: "Kaul 2025 (placeholder)",
   },
   {

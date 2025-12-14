@@ -72,7 +72,7 @@ function Displacement() {
           <div className="space-y-4 mb-6">
             <p className="text-lg text-kashmir-700 leading-relaxed">
               {/* TODO: Explain internal displacement and cross-border movement of Kashmiri Muslims, again framing it as conflict-driven and forced (Themes 3, 4, 7). */}
-              The displacement of Kashmiri Muslims—whether internal displacement within India or cross-border movements—must also be understood as conflict-driven and forced, not voluntary. These movements were shaped by violence, border restrictions, and state control over movement and security.
+              The displacement of Kashmiri Muslims, whether internal displacement within India or cross-border movements, must also be understood as conflict-driven and forced, not voluntary. These movements were shaped by violence, border restrictions, and state control over movement and security.
             </p>
             <p className="text-lg text-kashmir-700 leading-relaxed">
               {/* TODO: Discuss the complexity of belonging and identity in these contexts. */}

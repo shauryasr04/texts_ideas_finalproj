@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { backgroundEvents } from "../data/backgroundEvents";
+import KashmirMapImage from "../images/region-Kashmir-India.webp";
 
 /*
   History page with a banner that appears immediately when the user arrives.
@@ -65,16 +66,22 @@ function History() {
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-6 tracking-tight">Where is Kashmir?</h2>
           <p className="text-base text-[#4a4a4a] mb-8 leading-relaxed">
+            Kashmir has been a region of dispute for several decades, originating from the 1947 partition 
+            of British India, when the state of Jammu and Kashmir became contested between India and Pakistan. 
             Kashmir's geographical position between India and Pakistan, and its status as a disputed territory, 
             cannot be understood without reference to colonial partition and postcolonial state-making. 
             The region's borders were drawn through conflict and negotiation, shaping who belongs where 
-            and under what conditions.
+            and under what conditions. This historical context is essential for understanding the events 
+            that would lead to the 1990 exodus.
           </p>
           
-          {/* Map Placeholder */}
-          <div className="bg-[#fafafa] border border-[#e5e5e5] p-12 text-center mb-6">
-            <p className="text-[#4a4a4a] text-base">Map goes here</p>
-            <p className="text-[#6a6a6a] text-sm mt-2">Map of Kashmir region showing disputed territories</p>
+          {/* Map */}
+          <div className="bg-[#fafafa] border border-[#e5e5e5] mb-6 overflow-hidden">
+            <img 
+              src={KashmirMapImage} 
+              alt="Map of Kashmir region showing disputed territories"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </section>
 
@@ -83,6 +90,17 @@ function History() {
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-6 tracking-tight">
             Borders, Wars, and the Making of a Conflict
           </h2>
+          <p className="text-base text-[#4a4a4a] mb-8 leading-relaxed">
+            Following the first Indo-Pakistani war, the region was divided by a formalized Line of Control (LoC), 
+            splitting Kashmir into both Indian and Pakistani territories. Rather than resolving the dispute, 
+            the LoC intensified Kashmir's status as a militarized and politically unstable region. In the late 1980s, 
+            political turmoil escalated dramatically following allegations of electoral fraud in state elections. 
+            Various groups began advocating for independence or alignment with Pakistan, prompting strong responses 
+            from India. This escalating conflict created conditions in which Kashmiri Pandits became targets, 
+            leading the vast majority to flee the valley suddenly, many believing their departure would be temporary. 
+            What would become known as the 1990 Kashmiri Pandit Exodus unfolded as a mass displacement that 
+            fundamentally altered the region's demographic and cultural landscape.
+          </p>
           <p className="text-base text-[#4a4a4a] mb-8 leading-relaxed">
             The timeline below traces how wars, partition, and border decisions have shaped belonging 
             and displacement in Kashmir. Each event represents moments when state power, violence, 
@@ -102,51 +120,6 @@ function History() {
                 <p className="text-[#4a4a4a] leading-relaxed">{event.text}</p>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* Power and the State */}
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Power and the State</h2>
-          <p className="text-base text-[#4a4a4a] mb-10 leading-relaxed">
-            State power, law, and militarization have fundamentally shaped movement and security in Kashmir. 
-            The following sections explore how these forces intersect with historical, political, and social 
-            factors to create conditions for displacement.
-          </p>
-          
-          <div className="space-y-10">
-            <div>
-              <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-4">
-                Historical Context
-              </h3>
-              <p className="text-base text-[#4a4a4a] leading-relaxed">
-                The historical roots of the conflict trace back to Partition, princely states, and early 
-                post-independence politics. Colonial legacies and postcolonial state-making created the 
-                conditions for ongoing contestation over territory and belonging.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-4">
-                Political Dimensions
-              </h3>
-              <p className="text-base text-[#4a4a4a] leading-relaxed">
-                Political factors including autonomy movements, central government policies, and regional 
-                dynamics have shaped how state power is exercised and contested in Kashmir, directly 
-                affecting who can move freely and who is forced to leave.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-4">
-                Social and Cultural Factors
-              </h3>
-              <p className="text-base text-[#4a4a4a] leading-relaxed">
-                Social and cultural factors, including religious diversity and community relations, have 
-                intersected with political developments to shape patterns of belonging and displacement. 
-                These dynamics cannot be separated from questions of state power and border-making.
-              </p>
-            </div>
           </div>
         </section>
 

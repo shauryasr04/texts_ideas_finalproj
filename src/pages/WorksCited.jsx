@@ -15,7 +15,7 @@ function WorksCited() {
 
         <p className="text-base text-[#4a4a4a] mb-12 leading-relaxed">
           {/* TODO: Note that these sources represent different perspectives (historical, literary, journalistic, visual) which together shape how exile in Kashmir is remembered and represented (Themes 5, 9). */}
-          The sources below represent different perspectives—historical, literary, journalistic, and visual—which together shape how exile in Kashmir is remembered and represented. Each type of source contributes to understanding displacement, memory, and belonging, while also reflecting questions about who gets to tell the story and how narratives are constructed.
+          The sources below represent different perspectives, historical, literary, journalistic, and visual, which together shape how exile in Kashmir is remembered and represented. Each type of source contributes to understanding displacement, memory, and belonging, while also reflecting questions about who gets to tell the story and how narratives are constructed.
         </p>
 
         {/* Course Texts */}

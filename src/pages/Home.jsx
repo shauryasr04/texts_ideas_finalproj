@@ -21,7 +21,7 @@ function Home() {
           </h1>
           <p className="text-xl text-kashmir-700 mb-8 leading-relaxed">
             {/* TODO: Briefly introduce exile as both a physical displacement and a broader human condition (Theme 1). */}
-            Exile is more than physical migration—it is a fundamental human condition that shapes identity, memory, and belonging. This digital exhibit explores the complex narratives of displacement, memory, and identity among Kashmiri Pandits, Kashmiri Muslims, and Sindhi migrants, examining how exile shapes belonging across generations.
+            Exile is more than physical migration. It is a fundamental human condition that shapes identity, memory, and belonging. This digital exhibit explores the complex narratives of displacement, memory, and identity among Kashmiri Pandits, Kashmiri Muslims, and Sindhi migrants, examining how exile shapes belonging across generations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

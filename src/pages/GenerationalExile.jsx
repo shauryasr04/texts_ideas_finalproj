@@ -16,7 +16,7 @@ function GenerationalExile() {
           </h1>
           <p className="text-xl text-[#4a4a4a] leading-relaxed font-light">
             Exile does not end with the first generation. For second and third-generation 
-            Kashmiri Pandits, exile is an inherited condition—a relationship to a homeland 
+            Kashmiri Pandits, exile is an inherited condition, a relationship to a homeland 
             that exists primarily through stories, memory, and imagination rather than direct 
             experience.
           </p>
@@ -38,7 +38,7 @@ function GenerationalExile() {
               photographs, and cultural practices.
             </p>
             <p className="text-base text-[#4a4a4a] leading-relaxed">
-              This generational exile creates a unique form of displacement—one in which 
+              This generational exile creates a unique form of displacement, one in which 
               individuals are exiled from a place they have never known, yet which remains 
               central to their identity and sense of belonging.
             </p>
@@ -48,7 +48,7 @@ function GenerationalExile() {
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Key Characteristics</h3>
             <ul className="space-y-6 text-[#4a4a4a]">
               <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
+                <span className="text-[#0a0a0a] mr-4 text-lg font-light">-</span>
                 <span>
                   <strong className="text-[#0a0a0a]">Imagined Homeland:</strong> Kashmir exists as a place of imagination 
                   and memory rather than direct experience, creating a complex relationship 
@@ -56,7 +56,7 @@ function GenerationalExile() {
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
+                <span className="text-[#0a0a0a] mr-4 text-lg font-light">-</span>
                 <span>
                   <strong className="text-[#0a0a0a]">Inherited Trauma:</strong> Second and third generations inherit not 
                   only stories but also the trauma and loss experienced by their parents and 
@@ -64,7 +64,7 @@ function GenerationalExile() {
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
+                <span className="text-[#0a0a0a] mr-4 text-lg font-light">-</span>
                 <span>
                   <strong className="text-[#0a0a0a]">Cultural Disconnection:</strong> Growing up outside Kashmir means 
                   limited or no connection to the physical place, its landscapes, seasons, 
@@ -72,7 +72,7 @@ function GenerationalExile() {
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-[#0a0a0a] mr-4 text-lg font-light">—</span>
+                <span className="text-[#0a0a0a] mr-4 text-lg font-light">-</span>
                 <span>
                   <strong className="text-[#0a0a0a]">Identity Negotiation:</strong> Navigating identity between the 
                   Kashmir of stories and the places where they actually live, creating 
@@ -89,11 +89,24 @@ function GenerationalExile() {
           
           <div className="space-y-6 mb-10">
             <p className="text-base text-[#4a4a4a] leading-relaxed">
-              The second generation—those born shortly before or after the exodus, or in the 
-              early years of displacement—occupy a unique position. Many have fragmented memories 
+              The second generation, those born shortly before or after the exodus, or in the 
+              early years of displacement, occupy a unique position. Many have fragmented memories 
               of Kashmir from early childhood, while others know it only through stories. They 
               bridge the gap between the first generation's direct experience and the third 
-              generation's complete reliance on inherited narratives.
+              generation's complete reliance on inherited narratives. As successive generations of 
+              Pandits have been displaced, their understanding of home has fundamentally shifted. 
+              The initial physical exile, combined with the ongoing exile experienced through memory, 
+              creates a compound condition of generational displacement.
+            </p>
+            <p className="text-base text-[#4a4a4a] leading-relaxed">
+              Younger Pandits continue to identify Kashmir as home, yet their knowledge of it comes 
+              entirely through stories, photographs, rituals, and the palpable absence of the place 
+              itself. They navigate the tension between their current locations and the past they've 
+              inherited. Parents transmit stories about the tragedy to their children, which can provoke 
+              difficult emotional responses. Documented accounts include children asking their parents 
+              why such suffering happened to them, expressing the pain of inherited trauma. Despite 
+              these questions, children must come to terms with their status as victims of exile, 
+              creating a cycle that perpetuates across generations.
             </p>
           </div>
 
@@ -138,17 +151,24 @@ function GenerationalExile() {
           
           <div className="space-y-6 mb-10">
             <p className="text-base text-[#4a4a4a] leading-relaxed">
-              The third generation—those born in the 2000s and later—represents a new phase 
+              The third generation, those born in the 2000s and later, represents a new phase 
               of generational exile. For these individuals, Kashmir exists almost entirely 
               as an imagined place, known only through stories, photographs, and cultural 
-              practices passed down through generations.
+              practices passed down through generations. This understanding fundamentally shapes their 
+              identity, as they come to see themselves as those who have been wronged by the state 
+              and as victims of historical injustice.
             </p>
             <p className="text-base text-[#4a4a4a] leading-relaxed">
-              This creates unique challenges and opportunities. The third generation must 
-              negotiate identity in contexts where the physical homeland is increasingly 
-              distant, while also building lives in places that may never fully feel like 
-              home. At the same time, they bring new perspectives and possibilities for 
-              understanding exile, belonging, and identity.
+              While older generations have often accepted their circumstances, some younger 
+              individuals channel feelings of injustice and humiliation into anger, leading to 
+              radicalization and resistance against the state. Though not universal, this represents 
+              a tragic consequence of generational trauma and inherited displacement. This dynamic 
+              finds parallels in <em>The Displaced</em> short stories, particularly Porochista Khakpour's 
+              "13 Stories of an Immigrant." Khakpour explores her identity as an Iranian immigrant 
+              and the sense of insecurity inherited from her parents, who maintained that belonging 
+              wasn't necessary since their displacement was temporary. Her generational exile created 
+              confusion about choosing between America and Iran, mirroring the struggles many young 
+              Pandits face in determining where home truly lies.
             </p>
           </div>
 
@@ -188,7 +208,7 @@ function GenerationalExile() {
               creates complex questions about belonging, home, and authenticity.
             </p>
             <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Many navigate multiple identities—Kashmiri, Indian, and the specific identities 
+              Many navigate multiple identities: Kashmiri, Indian, and the specific identities 
               of the places where they live. This negotiation is ongoing and dynamic, shaped 
               by personal experiences, family stories, cultural practices, and broader social 
               and political contexts.
@@ -247,6 +267,23 @@ function GenerationalExile() {
               while maintaining connections to the past through memory, story, and cultural 
               practice.
             </p>
+          </div>
+        </section>
+
+        {/* Reference Video */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Reference Video</h2>
+          
+          <div className="bg-[#fafafa] border border-[#e5e5e5] overflow-hidden">
+            <div className="w-full aspect-video">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/oQkGoDSPkgg"
+                title="Generational Exile Reference Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </section>
 

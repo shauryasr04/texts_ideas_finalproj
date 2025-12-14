@@ -23,11 +23,26 @@ function About() {
           
           <div className="space-y-4">
             <p className="text-lg text-kashmir-700 leading-relaxed">
-              {/* TODO: State clearly that the project explores exile and belonging in Kashmir as part of a broader human and global pattern (Themes 1, 10). */}
-              This project explores exile and belonging in Kashmir as part of a broader human and global pattern. The region serves as a case study for understanding exile, displacement, and belonging, with multiple groups (Pandits, Muslims, Sindhi migrants) providing nuanced perspectives on these themes.
+              When a community is forced to leave its homeland, the loss extends far beyond geographical borders. It 
+              persists in memory, identity, and across generations. This digital exhibit explores the 1990 Kashmiri Pandit 
+              Exodus and demonstrates that this event produced not only physical displacement, but created forms of 
+              exile through memory that were inherited across generations, continuing to shape identity long after 
+              the initial departure.
             </p>
             <p className="text-lg text-kashmir-700 leading-relaxed">
-              Exile and migration are central themes because they illuminate how identity, memory, and political belonging are negotiated in contexts of conflict and displacement. The Kashmiri case connects to broader questions about home, homeland, and the human experience of forced movement.
+              The digital exhibit format was chosen to allow users to navigate through the crisis themselves, 
+              experiencing the journey that Pandits underwent and understanding the impacts on memory, identity, 
+              and future generations. Unlike traditional academic formats like essays, this medium enables the 
+              presentation of art, film, and testimonies that communicate memory and experience more effectively. 
+              The interactive nature of the website allows viewers to discover and engage with diverse works 
+              exploring these themes at their own pace, creating a more immersive and personal understanding 
+              of the exile experience.
+            </p>
+            <p className="text-lg text-kashmir-700 leading-relaxed">
+              This project explores exile and belonging in Kashmir as part of a broader human and global pattern. 
+              Exile and migration are central themes because they illuminate how identity, memory, and political 
+              belonging are negotiated in contexts of conflict and displacement. The Kashmiri case connects to broader 
+              questions about home, homeland, and the human experience of forced movement.
             </p>
           </div>
         </section>
@@ -94,10 +109,27 @@ function About() {
           <div className="space-y-4">
             <p className="text-lg text-kashmir-700 leading-relaxed">
               {/* TODO: Explicitly tie the site back to central course themes of exile, borders, memory, and identity, with references to key texts and films (Themes 1, 4, 5, 6, 10). */}
-              This project explicitly connects to central course themes of exile, borders, memory, and identity. The Kashmiri case study illuminates broader questions about exile as a human condition, forced movement and border-making, memory and storytelling, identity formation in diaspora, and transnational parallels. Key course texts—from Ovid's Tristia to contemporary works—provide frameworks for understanding these themes.
+              This project explicitly connects to central course themes of exile, borders, memory, and identity. The Kashmiri case study illuminates broader questions about exile as a human condition, forced movement and border-making, memory and storytelling, identity formation in diaspora, and transnational parallels. Key course texts, from Ovid's Tristia to contemporary works, provide frameworks for understanding these themes.
             </p>
             <p className="text-lg text-kashmir-700 leading-relaxed">
               The project contributes to understanding the relationship between individual experiences and collective narratives, the role of memory in shaping identity, and the political dimensions of belonging and exclusion. It situates Kashmir within global patterns of displacement while attending to the specific historical, political, and cultural contexts that shape exile and belonging in the region.
+            </p>
+          </div>
+        </section>
+
+        {/* Personal Reflection */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-kashmir-800 mb-6">Personal Reflection</h2>
+          
+          <div className="space-y-4">
+            <p className="text-lg text-kashmir-700 leading-relaxed">
+              Engaging with this topic and project has provided opportunities to reflect on my own relationship 
+              with home as an immigrant from India. While my experience differs from the Pandits' displacement, 
+              this work has illuminated how memory and inherited narratives continue to shape identity even after 
+              relocation. The experiences of growing up in India remain an integral part of who I am, carrying 
+              forward memories, habits, and cultural practices. This process of loss, remembrance, and belonging 
+              continues to influence both who I am and who I will become. While geographical location may change, 
+              the traces of previous homes persist in memory and identity.
             </p>
           </div>
         </section>
@@ -108,19 +140,15 @@ function About() {
           <div className="space-y-2 text-kashmir-700">
             <p>
               <strong>Course: </strong>
-              TODO: Insert course name (e.g., "Texts & Ideas: Exile & Belonging")
+              Texts & Ideas: Exile & Belonging
             </p>
             <p>
-              <strong>Institution: </strong>
-              TODO: Insert institution name
+              <strong>Project Type: </strong>
+              Digital Exhibit/Archive
             </p>
             <p>
-              <strong>Date: </strong>
-              TODO: Insert date or semester
-            </p>
-            <p>
-              <strong>Author: </strong>
-              TODO: Insert your name (optional)
+              <strong>Focus: </strong>
+              The 1990 Kashmiri Pandit Exodus and its multi-dimensional impacts on physical displacement, memory, and generational identity
             </p>
           </div>
         </section>

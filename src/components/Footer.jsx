@@ -6,7 +6,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-[#6a6a6a] text-sm mb-4 md:mb-0 font-light">
-            © 2025 Exile and Memory in Kashmir — A Digital Exhibit
+            © 2025 Exile and Memory in Kashmir - A Digital Exhibit
           </p>
           <Link
             to="/works-cited"

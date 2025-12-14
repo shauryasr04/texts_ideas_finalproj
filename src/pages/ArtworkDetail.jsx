@@ -1,11 +1,14 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { getArtworkById, getRelatedArtworks } from '../data/artworks';
+import { getArtworkById } from '../data/artworks';
+import FragmentedMemoryImage from '../images/FragmentedMemory.png';
+import StreetShopImage from '../images/StreetShop.png';
+import DreamingAnimalImage from '../images/DreamingAnimal.png';
+import StrugglingSmileImage from '../images/StrugglingSmile.png';
 
 function ArtworkDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const artwork = getArtworkById(id);
-  const relatedArtworks = artwork ? getRelatedArtworks(id, artwork.category) : [];
 
   if (!artwork) {
     return (
@@ -83,7 +86,7 @@ function ArtworkDetail() {
             {artwork.title}
           </h1>
           <p className="text-xl text-[#4a4a4a] font-light">
-            {artwork.author || artwork.director || artwork.artist}
+            {artwork.author || artwork.director || artwork.artist || artwork.speaker}
             {artwork.year && ` • ${artwork.year}`}
             {artwork.medium && ` • ${artwork.medium}`}
             {artwork.type && ` • ${artwork.type}`}
@@ -95,12 +98,50 @@ function ArtworkDetail() {
       <div className="max-w-4xl mx-auto px-8 pt-16 pb-20">
         {/* Artwork Display */}
         <section className="mb-16">
-          <div className="bg-[#fafafa] border border-[#e5e5e5] h-96 flex items-center justify-center mb-8">
-            <div className="text-center p-8">
-              {getCategoryIcon(artwork.category)}
-              <p className="text-sm text-[#6a6a6a] uppercase tracking-wider mt-4">Artwork Image / Content</p>
-              <p className="text-xs text-[#6a6a6a] mt-2">Placeholder for {artwork.category.toLowerCase()}</p>
-            </div>
+          <div className="bg-[#fafafa] border border-[#e5e5e5] mb-8 overflow-hidden">
+            {artwork.videoId ? (
+              <div className="w-full aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${artwork.videoId}${artwork.videoStartTime ? `?start=${artwork.videoStartTime}` : ''}`}
+                  title={artwork.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            ) : artwork.id === 'art-1' ? (
+              <img 
+                src={FragmentedMemoryImage} 
+                alt={artwork.title}
+                className="w-full h-auto object-contain max-h-[600px] mx-auto"
+              />
+            ) : artwork.id === 'art-2' ? (
+              <img 
+                src={StreetShopImage} 
+                alt={artwork.title}
+                className="w-full h-auto object-contain max-h-[600px] mx-auto"
+              />
+            ) : artwork.id === 'art-3' ? (
+              <img 
+                src={DreamingAnimalImage} 
+                alt={artwork.title}
+                className="w-full h-auto object-contain max-h-[600px] mx-auto"
+              />
+            ) : artwork.id === 'art-4' ? (
+              <img 
+                src={StrugglingSmileImage} 
+                alt={artwork.title}
+                className="w-full h-auto object-contain max-h-[600px] mx-auto"
+              />
+            ) : (
+              <div className="h-96 flex items-center justify-center">
+                <div className="text-center p-8">
+                  {getCategoryIcon(artwork.category)}
+                  <p className="text-sm text-[#6a6a6a] uppercase tracking-wider mt-4">Artwork Image / Content</p>
+                  <p className="text-xs text-[#6a6a6a] mt-2">Placeholder for {artwork.category.toLowerCase()}</p>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
@@ -122,31 +163,6 @@ function ArtworkDetail() {
           </div>
         </section>
 
-        {/* Related Works */}
-        {relatedArtworks.length > 0 && (
-          <section className="mb-16">
-            <h2 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Related Works</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {relatedArtworks.map((related) => (
-                <Link
-                  key={related.id}
-                  to={`/artwork/${related.id}`}
-                  className="card-elegant p-6 hover:shadow-lg transition-shadow"
-                >
-                  <div className="h-32 bg-[#f8f8f8] border border-[#e5e5e5] flex items-center justify-center mb-4">
-                    {getCategoryIcon(related.category)}
-                  </div>
-                  <h3 className="text-lg font-semibold text-[#0a0a0a] mb-2">{related.title}</h3>
-                  <p className="text-sm text-[#4a4a4a] mb-2">
-                    {related.author || related.director || related.artist}
-                  </p>
-                  <p className="text-xs text-[#6a6a6a] line-clamp-2">{related.description}</p>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
         {/* Navigation */}
         <section className="mb-12 bg-white border border-[#e5e5e5] p-10">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -157,10 +173,10 @@ function ArtworkDetail() {
               Back to Gallery
             </button>
             <Link
-              to="/memory-exile"
+              to="/"
               className="btn-primary"
             >
-              View All Artworks
+              Back to Home
             </Link>
           </div>
         </section>

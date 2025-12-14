@@ -83,7 +83,7 @@ function Memory() {
               "TODO: Insert a meaningful quote about homeland, exile, or belonging from one 
               of your sources or testimonies."
             </p>
-            <p className="text-kashmir-600 mt-3">— TODO: Source attribution</p>
+            <p className="text-kashmir-600 mt-3">- TODO: Source attribution</p>
           </div>
         </section>
 
