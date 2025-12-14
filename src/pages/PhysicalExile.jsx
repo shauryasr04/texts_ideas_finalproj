@@ -153,9 +153,8 @@ function PhysicalExile() {
             <p className="text-base text-[#4a4a4a] leading-relaxed">
               Over three decades after the exodus, the vast majority of displaced Kashmiri Pandits 
               remain outside the Kashmir Valley. Only approximately 3,800 have returned, while 
-              others continue to find refuge in Jammu, Delhi, and other parts of India. With over 98% 
-              still displaced, the physical exile that began in 1990 remains a defining reality for the 
-              community today. The physical displacement continues, with many second and third-generation 
+              others continue to find refuge in Jammu, Delhi, and other parts of India. 
+              The physical displacement continues, with many second and third-generation 
               Pandits having never set foot in their ancestral homeland.
             </p>
             <p className="text-base text-[#4a4a4a] leading-relaxed">

@@ -23,11 +23,18 @@ function MemoryExile() {
           </h1>
           <p className="text-xl text-[#4a4a4a] leading-relaxed font-light">
             Exile extends far beyond physical displacement. For Kashmiri Pandits, the loss of 
-            homeland is also a mnemonic exile, a condition in which memories of Kashmir are 
+            homeland is also an internal battle of memory in exile, a condition in which memories of Kashmir are 
             preserved, transmitted, and transformed across generations, shaping identity and 
-            belonging in diaspora. As these memories are passed down, they create generational exile, a 
+            belonging. 
+            <br/>
+            
+            <br />As these memories are passed down, they create generational exile, a 
             byproduct where second and third generations inherit an imagined homeland through stories 
             and memory rather than direct experience.
+            <br/>
+
+            <br />
+            This page will explore these methods of memory and generational exile through expressions of art, film, and other creative mediums.
           </p>
         </div>
       </section>
@@ -37,23 +44,9 @@ function MemoryExile() {
         {/* Memory as Exile */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Memory and Generational Exile</h2>
-          
-          <div className="space-y-6 mb-10">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              For first-generation exiles, memory serves as both a connection to homeland and a 
-              reminder of loss. The Kashmir they remember is frozen in time, the Kashmir of 1990 
-              and before, while the physical place has continued to change. This creates a form 
-              of exile that exists in the space between memory and reality.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Memory exile is not simply about remembering; it is about the ongoing negotiation 
-              between the homeland that was, the homeland that is (for those who have returned 
-              or visited), and the homeland that exists only in stories and imagination.
-            </p>
-          </div>
 
           <div className="bg-[#fafafa] border-l-4 border-[#0a0a0a] p-10 mb-10">
-            <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Key Dimensions</h3>
+            <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Key Dimensions of Memory</h3>
             <ul className="space-y-6 text-[#4a4a4a]">
               <li className="flex items-start">
                 <span className="text-[#0a0a0a] mr-4 text-lg font-light">-</span>
@@ -87,13 +80,31 @@ function MemoryExile() {
           </div>
         </section>
 
+         {/* The Politics of Memory */}
+ <section className="mb-16">
+   <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">The Politics of Memory</h2>
+   
+   <div className="space-y-6">
+     <p className="text-base text-[#4a4a4a] leading-relaxed">
+       Memory is not neutral but is shaped by political, social, and cultural forces. 
+       The ways in which the Kashmir Pandit exodus is remembered, or forgotten, reflect 
+       broader questions about recognition, justice, and belonging in postcolonial India.
+     </p>
+     <p className="text-base text-[#4a4a4a] leading-relaxed">
+       The struggle to preserve and transmit memory is also a struggle for recognition, 
+       for ensuring that the experiences of displacement are not erased or forgotten. 
+       This mnemonic exile is thus both personal and political, individual and collective.
+     </p>
+   </div>
+ </section>
+
         {/* Intergenerational Transmission */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Intergenerational Transmission</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Generational Exile: A Byproduct of Memory Exile
+          </h2>
           
           <div className="space-y-6 mb-10">
             <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Memory is not static but is actively transmitted and transformed across generations. 
               First-generation exiles share stories, photographs, and cultural practices with 
               their children and grandchildren, creating an imagined homeland that exists through 
               narrative rather than direct experience.
@@ -145,33 +156,6 @@ function MemoryExile() {
 
         {/* Generational Exile as Byproduct */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Generational Exile: A Byproduct of Memory Exile</h2>
-          
-          <div className="space-y-6 mb-10">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Over three decades after the exodus, a significant portion of the Kashmiri Pandit 
-              community consists of second and third-generation individuals who were born and 
-              raised in exile. For these generations, Kashmir exists not as a physical place 
-              they have known, but as an imagined homeland constructed through family stories, 
-              photographs, and cultural practices passed down from the first generation.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              This generational exile is a direct byproduct of memory exile. As first-generation 
-              exiles preserve and transmit their memories of Kashmir, they create conditions in 
-              which younger generations inherit an imagined homeland. The initial physical exile, 
-              combined with the ongoing exile experienced through memory, creates a compound condition 
-              of generational displacement. Younger Pandits continue to identify Kashmir as home, yet 
-              their knowledge of it comes entirely through stories, photographs, rituals, and the 
-              palpable absence of the place itself.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Parents transmit stories about the tragedy to their children, which can provoke 
-              difficult emotional responses. Documented accounts include children asking their parents 
-              why such suffering happened to them, expressing the pain of inherited trauma. Despite 
-              these questions, children must come to terms with their status as victims of exile, 
-              creating a cycle that perpetuates across generations.
-            </p>
-          </div>
 
           <div className="bg-[#fafafa] border-l-4 border-[#0a0a0a] p-10 mb-10">
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Key Characteristics of Generational Exile</h3>
@@ -213,30 +197,10 @@ function MemoryExile() {
 
         {/* Second and Third Generation Experiences */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Second and Third Generation Experiences</h2>
           
           <div className="space-y-6 mb-10">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              The second generation, those born shortly before or after the exodus, or in the 
-              early years of displacement, occupy a unique position. Many have fragmented memories 
-              of Kashmir from early childhood, while others know it only through stories. They 
-              bridge the gap between the first generation's direct experience and the third 
-              generation's complete reliance on inherited narratives.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              The third generation, those born in the 2000s and later, represents a new phase 
-              of generational exile. For these individuals, Kashmir exists almost entirely 
-              as an imagined place, known only through stories, photographs, and cultural 
-              practices passed down through generations. This understanding fundamentally shapes their 
-              identity, as they come to see themselves as those who have been wronged by the state 
-              and as victims of historical injustice.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              While older generations have often accepted their circumstances, some younger 
-              individuals channel feelings of injustice and humiliation into anger, leading to 
-              radicalization and resistance against the state. Though not universal, this represents 
-              a tragic consequence of generational trauma and inherited displacement. This dynamic 
-              finds parallels in <em>The Displaced</em> short stories, particularly Porochista Khakpour's 
+            <p className="text-base text-[#4a4a4a] leading-relaxed">               
+              These dynamics are parallel in <em>The Displaced</em> short stories, particularly Porochista Khakpour's 
               "13 Stories of an Immigrant." Khakpour explores her identity as an Iranian immigrant 
               and the sense of insecurity inherited from her parents, who maintained that belonging 
               wasn't necessary since their displacement was temporary. Her generational exile created 
@@ -272,24 +236,7 @@ function MemoryExile() {
 
         {/* Memory and Identity */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Memory and Identity</h2>
-          
-          <div className="space-y-6">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Memory plays a central role in the formation and maintenance of identity for 
-              displaced communities. For Kashmiri Pandits, memory of Kashmir is not simply 
-              about the past but is actively used to construct identity in the present, 
-              creating a sense of belonging that transcends physical place.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              This mnemonic identity exists in tension with the realities of life in diaspora. 
-              Communities must negotiate between preserving memory and adapting to new contexts, 
-              between remembering homeland and building new lives, between the Kashmir of memory 
-              and the Kashmir of the present. For second and third generations, this negotiation 
-              becomes even more complex as they form identity in the space between the Kashmir 
-              of stories and the places where they actually live.
-            </p>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">These forms of Exile are Manifested in Art, Film, and Other Creative Mediums</h2>
 
           <div className="bg-[#fafafa] p-10 border border-[#e5e5e5] mt-10">
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">Memory Practices</h3>
@@ -302,63 +249,32 @@ function MemoryExile() {
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-[#0a0a0a] mb-3">Photographs</h4>
+                <h4 className="font-semibold text-[#0a0a0a] mb-3">Photographs, Art Pieces</h4>
                 <p className="text-[#4a4a4a] text-sm leading-relaxed">
                   Visual records of pre-exodus Kashmir that serve as tangible connections 
                   to homeland and memory.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-[#0a0a0a] mb-3">Cultural Practices</h4>
+                <h4 className="font-semibold text-[#0a0a0a] mb-3">Films</h4>
                 <p className="text-[#4a4a4a] text-sm leading-relaxed">
-                  Festivals, rituals, and traditions that maintain connection to Kashmir 
-                  while adapting to new contexts.
+                  Documentaries that explore the experiences of the Kashmiri Pandit exodus, as well as videos about personal stories of exile.
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-[#0a0a0a] mb-3">Community Organizations</h4>
+                <h4 className="font-semibold text-[#0a0a0a] mb-3">Songs/Music</h4>
                 <p className="text-[#4a4a4a] text-sm leading-relaxed">
-                  Groups and associations that create spaces for memory sharing and 
-                  identity formation in diaspora.
+                    Songs that explore the experiences of the Kashmiri Pandit exodus, as well as personal stories of exile and the return to Kashmir as a second-generation or third-generation Pandit.                  
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* The Politics of Memory */}
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">The Politics of Memory</h2>
-          
-          <div className="space-y-6">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Memory is not neutral but is shaped by political, social, and cultural forces. 
-              The ways in which the Kashmir Pandit exodus is remembered, or forgotten, reflect 
-              broader questions about recognition, justice, and belonging in postcolonial India.
-            </p>
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              The struggle to preserve and transmit memory is also a struggle for recognition, 
-              for ensuring that the experiences of displacement are not erased or forgotten. 
-              This mnemonic exile is thus both personal and political, individual and collective.
-            </p>
-          </div>
-        </section>
-
         {/* Art and Memory Gallery */}
         <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0a0a0a] mb-8 tracking-tight">Art and Memory</h2>
           
           <div className="space-y-6 mb-10">
-            <p className="text-base text-[#4a4a4a] leading-relaxed">
-              Art serves as a powerful medium for preserving, transmitting, and transforming memory. 
-              Through poetry, visual art, film, literature, and other creative expressions, Kashmiri 
-              Pandit communities have documented their experiences of exile, loss, and belonging. The 
-              displacement extended beyond physical removal from place. It also severed the connection to 
-              home as an idea and concept. Through recollection, storytelling, and artistic expression, 
-              Kashmir persists as a remembered homeland for many displaced individuals, with nostalgia 
-              playing a central role in how displaced communities maintain their connection to the places 
-              they left behind.
-            </p>
             <p className="text-base text-[#4a4a4a] leading-relaxed">
               This page includes works spanning across poets, filmmakers, and other artists. Amongst the most signifcant are Lalita Pandit Hogan's poetry and Ajay Raina's documentary <em>The Tree They Have Planted Has Now Grown</em>.
               In the film world, this topic has also been explored in the Bollywood industry, namely in the film <em>The Kashmir Files</em> and <em> Haider </em>. Both films further examine themes of exile in memory as well as generational exile.

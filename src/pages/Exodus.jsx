@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 /*
   Main Kashmir Pandit Exodus page with:
@@ -8,6 +9,11 @@ import { Link } from "react-router-dom";
 */
 
 function Exodus() {
+  const exileSectionRef = useRef(null);
+
+  const scrollToExileSection = () => {
+    exileSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Museum Style */}
@@ -18,6 +24,15 @@ function Exodus() {
           </h1>
           <p className="text-xl text-[#4a4a4a] leading-relaxed max-w-3xl font-light">
           </p>
+          {/* Button to scroll to exile dimensions */}
+          <div className="mt-8">
+            <button
+              onClick={scrollToExileSection}
+              className="btn-primary"
+            >
+              Explore Dimensions of Exile
+            </button>
+          </div>
         </div>
       </section>
 
@@ -94,21 +109,13 @@ function Exodus() {
                 highlights the systematic nature of the displacement and the vulnerability of minority populations in conflict zones.
               </span>
             </li>
-            <li className="flex items-start">
-              <span className="text-[#0a0a0a] mr-4 text-lg font-light">-</span>
-              <span>
-                <strong className="text-[#0a0a0a]">Cultural Loss:</strong> The exodus resulted in the near-complete disappearance 
-                of Pandit communities from the Valley, leading to the loss of centuries-old cultural 
-                practices, languages, and traditions.
-              </span>
-            </li>
           </ul>
         </div>
         </div>
       </section>
 
       {/* Three Dimensions of Exile - Museum Gallery Style */}
-      <section className="py-20 bg-[#fafafa] border-t border-[#e5e5e5]">
+      <section ref={exileSectionRef} className="py-20 bg-[#fafafa] border-t border-[#e5e5e5]">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-semibold text-[#0a0a0a] mb-6 tracking-tight">
@@ -182,7 +189,7 @@ function Exodus() {
             <h2 className="text-2xl font-semibold text-[#0a0a0a] mb-8">
               Explore Further
             </h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
               <Link
                 to="/gallery"
                 className="btn-secondary"
@@ -194,6 +201,18 @@ function Exodus() {
                 className="btn-primary"
               >
                 Learn History
+              </Link>
+              <Link
+                to="/physical-exile"
+                className="btn-secondary"
+              >
+                Physical Exile
+              </Link>
+              <Link
+                to="/memory-exile"
+                className="btn-primary"
+              >
+                Memory Exile
               </Link>
             </div>
           </div>

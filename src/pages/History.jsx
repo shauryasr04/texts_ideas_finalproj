@@ -68,11 +68,8 @@ function History() {
           <p className="text-base text-[#4a4a4a] mb-8 leading-relaxed">
             Kashmir has been a region of dispute for several decades, originating from the 1947 partition 
             of British India, when the state of Jammu and Kashmir became contested between India and Pakistan. 
-            Kashmir's geographical position between India and Pakistan, and its status as a disputed territory, 
-            cannot be understood without reference to colonial partition and postcolonial state-making. 
             The region's borders were drawn through conflict and negotiation, shaping who belongs where 
-            and under what conditions. This historical context is essential for understanding the events 
-            that would lead to the 1990 exodus.
+            and under what conditions.
           </p>
           
           {/* Map */}
@@ -93,18 +90,15 @@ function History() {
           <p className="text-base text-[#4a4a4a] mb-8 leading-relaxed">
             Following the first Indo-Pakistani war, the region was divided by a formalized Line of Control (LoC), 
             splitting Kashmir into both Indian and Pakistani territories. Rather than resolving the dispute, 
-            the LoC intensified Kashmir's status as a militarized and politically unstable region. In the late 1980s, 
+            the LoC intensified Kashmir's status as a militarized and politically unstable region. In the late 80s, 
             political turmoil escalated dramatically following allegations of electoral fraud in state elections. 
             Various groups began advocating for independence or alignment with Pakistan, prompting strong responses 
             from India. This escalating conflict created conditions in which Kashmiri Pandits became targets, 
             leading the vast majority to flee the valley suddenly, many believing their departure would be temporary. 
-            What would become known as the 1990 Kashmiri Pandit Exodus unfolded as a mass displacement that 
-            fundamentally altered the region's demographic and cultural landscape.
+            This quick displacement is the Kashmiri Pandit Exodus
           </p>
           <p className="text-base text-[#4a4a4a] mb-8 leading-relaxed">
-            The timeline below traces how wars, partition, and border decisions have shaped belonging 
-            and displacement in Kashmir. Each event represents moments when state power, violence, 
-            and forced movement intersected to determine who could remain in place and who had to leave.
+            Refer to the timeline below for a better understanding of the historical context of the crisis.
           </p>
           
           <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6">
