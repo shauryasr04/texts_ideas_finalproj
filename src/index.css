@@ -2,10 +2,151 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom styles can be added here if needed */
+/* Smooth horizontal scrolling */
+.overflow-x-auto {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #0a0a0a;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2a;
+}
+
+/* Leaflet Map Styles */
+.kashmir-map {
+  border: 1px solid #e5e5e5;
+  position: relative !important;
+}
+
+.kashmir-map .leaflet-container {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.kashmir-map .leaflet-control-layers {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.kashmir-map .leaflet-control-layers-overlays label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #0a0a0a;
+  padding: 4px 8px;
+}
+
+.kashmir-map .leaflet-popup-content-wrapper {
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.kashmir-map .leaflet-popup-content {
+  margin: 12px;
+}
+
+/* Ensure map tiles load */
+.kashmir-map .leaflet-tile-container img {
+  max-width: none !important;
+}
+
+/* Historical map styling - make it look less modern and more period-appropriate */
+.kashmir-map .leaflet-tile-pane {
+  filter: grayscale(30%) contrast(85%) brightness(98%) sepia(5%);
+}
+
+.kashmir-map .leaflet-tile-container img {
+  max-width: none !important;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Mobile responsive map height */
+@media (max-width: 768px) {
+  .kashmir-map {
+    height: 60vh !important;
+  }
+}
+
+/* Professional typography */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+}
+
+/* Refined spacing and layout */
+.container-refined {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Professional button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-[#1a1a1a] text-white font-medium tracking-wide uppercase text-sm;
+  @apply hover:bg-[#2a2a2a] transition-all duration-300;
+  @apply border border-[#1a1a1a];
+  letter-spacing: 0.1em;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-transparent text-[#1a1a1a] font-medium tracking-wide uppercase text-sm;
+  @apply hover:bg-[#f5f5f5] transition-all duration-300;
+  @apply border border-[#1a1a1a];
+  letter-spacing: 0.1em;
+}
+
+/* Elegant section dividers */
+.section-divider {
+  @apply border-t border-[#e5e5e5];
+  margin: 4rem 0;
+}
+
+/* Professional card styles */
+.card-elegant {
+  @apply bg-white border border-[#e5e5e5];
+  @apply transition-all duration-300;
+  @apply hover:shadow-lg;
+}
+
+/* Refined text colors */
+.text-refined {
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+.text-refined-light {
+  color: #6a6a6a;
+  line-height: 1.7;
+}
 

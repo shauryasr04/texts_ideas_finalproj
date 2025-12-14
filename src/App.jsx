@@ -1,6 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Landing from "./pages/Landing";
+import History from "./pages/History";
+import Exodus from "./pages/Exodus";
+import PhysicalExile from "./pages/PhysicalExile";
+import MemoryExile from "./pages/MemoryExile";
+import GenerationalExile from "./pages/GenerationalExile";
+import Gallery from "./pages/Gallery";
+import ArtworkDetail from "./pages/ArtworkDetail";
+// Keep old pages for backward compatibility if needed
 import Home from "./pages/Home";
 import Background from "./pages/Background";
 import Displacement from "./pages/Displacement";
@@ -17,7 +26,17 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* New structure */}
+            <Route path="/" element={<Landing />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/exodus" element={<Exodus />} />
+            <Route path="/physical-exile" element={<PhysicalExile />} />
+            <Route path="/memory-exile" element={<MemoryExile />} />
+            <Route path="/generational-exile" element={<GenerationalExile />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/artwork/:id" element={<ArtworkDetail />} />
+            {/* Old pages - kept for backward compatibility */}
+            <Route path="/home-old" element={<Home />} />
             <Route path="/background" element={<Background />} />
             <Route path="/displacement" element={<Displacement />} />
             <Route path="/memory" element={<Memory />} />
