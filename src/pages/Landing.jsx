@@ -1,4 +1,20 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import DreamingAnimal from "../images/DreamingAnimal.png";
+import FragmentedMemory from "../images/FragmentedMemory.png";
+import im1 from "../images/im1.png";
+import im2 from "../images/im2.png";
+import im3 from "../images/im3.jpg";
+import im4 from "../images/im4.png";
+import im5 from "../images/im5.png";
+import im6 from "../images/im6.png";
+import im7 from "../images/im7.png";
+import im8 from "../images/im8.png";
+import im9 from "../images/im9.png";
+import im10 from "../images/im10.png";
+import im12 from "../images/im12.png";
+import StreetShop from "../images/StreetShop.png";
+import StrugglingSmile from "../images/StrugglingSmile.png";
 
 /*
   Landing page that introduces the main themes of the website
@@ -6,6 +22,48 @@ import { Link } from "react-router-dom";
 */
 
 function Landing() {
+  // All images for the slideshow
+  const images = [
+    DreamingAnimal,
+    FragmentedMemory,
+    im1,
+    im2,
+    im3,
+    im4,
+    im5,
+    im6,
+    im7,
+    im8,
+    im9,
+    im10,
+    im12,
+    StreetShop,
+    StrugglingSmile
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-rotate images every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  // Manual navigation
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Museum Style */}
@@ -32,6 +90,68 @@ function Landing() {
           >
             Begin Your Visit
           </Link>
+        </div>
+      </section>
+
+      {/* Image Slideshow Section */}
+      <section className="py-20 bg-white border-b border-[#e5e5e5]">
+        <div className="max-w-6xl mx-auto px-8">
+          <div className="relative w-full h-[500px] overflow-hidden">
+            {/* Images Container */}
+            <div 
+              className="flex transition-transform duration-700 ease-in-out h-full"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className="min-w-full h-full flex-shrink-0"
+                >
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={goToPrevious}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all z-10"
+              aria-label="Previous image"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={goToNext}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all z-10"
+              aria-label="Next image"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentIndex
+                      ? 'bg-white w-8'
+                      : 'bg-white/50 hover:bg-white/75'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

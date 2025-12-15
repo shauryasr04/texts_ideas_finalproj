@@ -420,6 +420,18 @@ The fragmented nature of the piece is a key visual and thematic element, suggest
       category: 'Film',
       videoId: 'RJAJdYw3ctw',
       exileType: 'both'
+    },
+    {
+      id: 'film-5',
+      title: 'Clip from Haider',
+      director: 'Vishal Bhardwaj',
+      year: '2014',
+      description: 'This verse frames exile not as erasure, but as continuity. By naming the land, its rivers and trees, and multiple religious identities, it asserts a belonging that predates conflict and survives displacement. Even in exile, memory becomes a way of remaining present, refusing disappearance.',
+      fullDescription: 'This verse frames exile not as erasure, but as continuity. By naming the land, its rivers and trees, and multiple religious identities, it asserts a belonging that predates conflict and survives displacement. Even in exile, memory becomes a way of remaining present, refusing disappearance.\n\nEnglish Translation:\nI am the sea, I am the tree.\nI am the river Jhelum, I am the chinar tree.\nI am the temple, I am the forbidden.\nI am Shia, I am Sunni, I am a Pandit.\nI was there, I am here, and I will remain.',
+      type: 'Feature Film',
+      category: 'Film',
+      videoId: '5QSZhddiHZc',
+      exileType: 'both'
     }
   ],
   literature: [
@@ -527,6 +539,17 @@ The fragmented nature of the piece is a key visual and thematic element, suggest
       fullDescription: 'NDTV Covers a news report covering displaced pandits 25 years later, asking them only one question: what do they want now?',
       category: 'Testimonial',
       videoId: 'oQkGoDSPkgg',
+      exileType: 'both'
+    },
+    {
+      id: 'testimonial-5',
+      title: 'New Pandits\' Protest against the Government as they Demand Relocation',
+      speaker: 'Many',
+      year: '2023',
+      description: 'This is a video outlining protest amongst new-gen Pandits that depicts their newfound resistance to the state as they become more aware of their generational exile and embrace their identity as one who is wronged by the state.',
+      fullDescription: 'This is a video outlining protest amongst new-gen Pandits that depicts their newfound resistance to the state as they become more aware of their generational exile and embrace their identity as one who is wronged by the state.',
+      category: 'Testimonial',
+      videoId: 'KjcQwMQY1Sg',
       exileType: 'both'
     }
   ]

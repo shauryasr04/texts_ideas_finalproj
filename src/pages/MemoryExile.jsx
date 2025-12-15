@@ -316,8 +316,9 @@ function MemoryExile() {
           {/* Visual Art Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6 border-b border-[#e5e5e5] pb-4">Visual Art</h3>
-            <div className="overflow-x-auto pb-4 -mx-8 px-8">
-              <div className="flex gap-6 min-w-max">
+            <div className="relative -mx-8 px-8">
+              <div className="overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <div className="flex gap-6 min-w-max">
                 {artworks.visualArt.map((art) => (
                   <Link
                     key={art.id}
@@ -376,14 +377,21 @@ function MemoryExile() {
                   </Link>
                 ))}
               </div>
+              </div>
+              <div className="absolute right-0 top-0 bottom-4 w-12 bg-gradient-to-l from-white to-transparent pointer-events-none flex items-center justify-end pr-2">
+                <svg className="w-6 h-6 text-[#4a4a4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
             </div>
           </div>
 
           {/* Film Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6 border-b border-[#e5e5e5] pb-4">Film & Documentary</h3>
-            <div className="overflow-x-auto pb-4 -mx-8 px-8">
-              <div className="flex gap-6 min-w-max">
+            <div className="relative -mx-8 px-8">
+              <div className="overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <div className="flex gap-6 min-w-max">
                 {artworks.film.map((film) => (
                   <Link
                     key={film.id}
@@ -437,14 +445,21 @@ function MemoryExile() {
                   </Link>
                 ))}
               </div>
+              </div>
+              <div className="absolute right-0 top-0 bottom-4 w-12 bg-gradient-to-l from-white to-transparent pointer-events-none flex items-center justify-end pr-2">
+                <svg className="w-6 h-6 text-[#4a4a4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
             </div>
           </div>
 
           {/* Music & Performance Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6 border-b border-[#e5e5e5] pb-4">Music & Performance</h3>
-            <div className="overflow-x-auto pb-4 -mx-8 px-8">
-              <div className="flex gap-6 min-w-max">
+            <div className="relative -mx-8 px-8">
+              <div className="overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <div className="flex gap-6 min-w-max">
                 {artworks.music.map((item) => (
                   <Link
                     key={item.id}
@@ -504,14 +519,21 @@ function MemoryExile() {
                   </Link>
                 ))}
               </div>
+              </div>
+              <div className="absolute right-0 top-0 bottom-4 w-12 bg-gradient-to-l from-white to-transparent pointer-events-none flex items-center justify-end pr-2">
+                <svg className="w-6 h-6 text-[#4a4a4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
             </div>
           </div>
 
           {/* Testimonials Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-6 border-b border-[#e5e5e5] pb-4">Testimonials</h3>
-            <div className="overflow-x-auto pb-4 -mx-8 px-8">
-              <div className="flex gap-6 min-w-max">
+            <div className="relative -mx-8 px-8">
+              <div className="overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                <div className="flex gap-6 min-w-max">
                 {artworks.testimonials.map((testimonial) => (
                   <Link
                     key={testimonial.id}
@@ -563,6 +585,12 @@ function MemoryExile() {
                     </div>
                   </Link>
                 ))}
+              </div>
+              </div>
+              <div className="absolute right-0 top-0 bottom-4 w-12 bg-gradient-to-l from-white to-transparent pointer-events-none flex items-center justify-end pr-2">
+                <svg className="w-6 h-6 text-[#4a4a4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </div>
           </div>
